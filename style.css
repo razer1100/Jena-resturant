@@ -1,0 +1,312 @@
+html{
+  scroll-behavior: smooth;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Quicksand, sans-serif";
+}
+.primary-text{
+  color : #e4b95b;
+}
+.btn{
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+}
+.btn-primary{
+  color: #fff;
+  border : 1px solid #fff;
+}
+.btn-primary:hover , .btn-secondary:hover{
+  background: #e4b95b;
+}
+.btn-secondary{
+  color : #fff;
+  background: #383848;
+  margin-top: 2rem;
+}
+.container{
+  max-width: 1100px;
+  margin: auto;
+}
+/*header start*/
+header{
+  height: 100vh;
+  background: url("../img/home_bg.jpeg") center center/cover no-repeat fixed;
+  position : relative;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  /*جعل مسافه بين العناصر بحيث يكون طل عنصر في حته منفصله عن الاخر */
+  align-items: center;/*make elements in the conter verticaly*/
+}
+#navbar img{
+  width : 80px;
+  margin-left: 100px;
+  }
+ul{
+  list-style: none;
+  
+}
+#navbar ul{
+  display: flex;
+  margin-right: 100px;
+}
+a{
+  text-decoration: none;
+}
+#navbar ul li a{
+  padding: 15px 20px;
+  color : #fff;
+  font-weight: 600;
+}
+#navbar ul li a:hover{
+  border-bottom : 2px solid #e4b95b;
+}
+header .content{
+  display: flex;
+  flex-direction: column;/*this mean the content will be aligned by columns*/
+  justify-content: center;
+  align-items: center;/*to male the content in the middle */
+  height: 75vh;
+}
+header .content h1 {
+  font-size: 40px;
+  color : #fff
+}
+header .content p {
+  margin : 20px 0px 40px;
+  color : #fff;
+}
+header:before{
+  content: "";
+  position : absolute;
+  top :0;
+  left :0;
+  height: 100%;
+  width :100%;
+  background: rgb(0,0,0,0.5);
+}
+header *{
+  z-index: 10;
+}
+/*header end */
+
+/*about start */
+#about{
+  height: 80vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background: #f4f4f4;
+}
+#about .title , #offers .title , #menu .title , #gallery h2{
+  text-align: center;
+  margin-bottom: 4rem;
+  
+}
+#about h2 , #offers h2 ,#menu h2 ,#gallery h2{
+  font-size: 40px;
+  
+  margin-bottom: 20px;
+}
+#about h2 ,#menu h2  ,{
+  color: #383848;
+}
+#offers h2{
+  color : #e4b95b;
+}
+#about .title p , #menu .title p{
+  font-size: 14px;
+  color :#9a9a9a;
+  font-weight: 600px;
+}
+#about .about-content{
+  display: flex;
+  justify-content: space-between;
+}
+#about .about-content img{
+  width : 450px;
+}
+#about .about-content p{
+  color : #9a9a9a;
+  margin-right: 7rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+/*about end*/
+/*offres start*/
+#offers{
+  height : 80vh;
+  display: flex;
+  justify-content: center;
+  background: url("../img/offer-background.jpg") center center/cover fixed ;
+}
+#offers h2{
+  color : #e4b95b;
+  font-weight: 500;
+}
+#offers .offers-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+#offers .offers-items h3{
+  font-size: 25px ;
+  margin :15px 0px ;
+}
+#offers .offers-items p{
+  font-size: 14px;
+  padding : 20px;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+#offers .offers-items span{
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+#offers .offers-items img{
+  width : 200px;
+}
+
+/*offers end*/
+/*menu starts*/
+#menu{
+  background: #f4f4f4;
+  padding: 5rem 0 ;
+}
+#menu .menu-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menu .menu-items .menu-item img{
+  width : 80;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+#menu .menu-items .menu-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin :40px;
+  
+}
+#menu .menu-items .menu-item h3{
+  color : #383848;
+  border-bottom: 1px dashed #c2bdbd;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+#menu .menu-items .menu-item span{
+  position : absolute;
+  top : 0;
+  right : 0;
+}
+#menu .btn {
+  display: block;
+  margin: 10px auto 0;
+  background: #e4b95b;
+  color : white;
+  cursor: pointer:
+}
+#menu .btn:hover{
+  background: black;
+}
+#daytime .daytime-items{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40vh;
+  text-align: center;
+}
+#daytime{
+  background: url("../img/daytime_bg.jpeg") center center/cover fixed no-repeat;
+  color : #f4f4f4;
+  text-align: center;
+  height: 50vh;
+}
+#daytime .daytime-items h3{
+  font-size: 32px;
+  margin : 15px 0 10px;
+}
+#daytime .daytime-items p{
+  font-weight: 600;
+}
+/*menu ends*/
+#gallery{
+  background: url("../img/offer-background.jpg") center center/cover fixed no-repeat;
+  
+}
+#gallery img{
+  width : 280px;
+  align-items: center;
+  display: flex;
+  border-radius: 15px;
+}
+#contact {
+  padding :5rem 0;
+  background : #f4f4f4;
+}
+#contact .container{
+  max-width: 900px;
+}
+#contact .contact-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#contact .contact-content .contact-info{
+  width : 50%;
+}
+#contact .contact-content .contact-info div{
+  margin : 35px 0;
+  line-height: 1.8;
+  
+}
+#contact .contact-content .contact-info h3{
+  font-size: 280x;
+  color : #383848;
+  margin-bottom: 10px;
+}
+#contant .contact-content .contact-info p{
+  color : #9a9a9a;
+}
+form{
+  width : 50%;
+}
+form input ,textarea{
+  display: block;
+  width : 100%;
+  padding : 20px 10px;
+  margin-bottom : 20px;
+  border : none;
+  background: #e3e2df;
+  border-radius:20px;
+}
+#contact .btn{
+  background : #e4b95b;
+  color :#fff;
+  
+}
+#contact .btn:hover{
+  background: gray;
+}
+
+#footer{
+  background: #383848;
+  text-align: center;
+  color : #fff;
+  padding : 15px 0 ;
+  font-size: 14px;
+}
